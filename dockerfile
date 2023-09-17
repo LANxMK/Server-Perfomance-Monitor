@@ -4,7 +4,9 @@ FROM python:latest
 
 #Labels as key value pair
 LABEL Maintainer="dexythepuppy"
+EXPOSE 8082
 
+ENTRYPOINT [“python3”, perfmon.py”]
 
 # Any working directory can be chosen as per choice like '/' or '/home' etc
 # i have chosen /usr/app/src
