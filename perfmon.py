@@ -8,12 +8,10 @@
 # install using 'pip install psutil'
 from pip._internal import main as pipmain
 
-try:
-   import psutil
-except ImportError:
-    pipmain(['install', 'psutil'])
-    import psutil
 
+pipmain(['install', 'psutil'])
+
+from pip._internal import psutil
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import parse_qs
 from time import time
