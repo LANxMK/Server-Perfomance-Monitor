@@ -6,7 +6,7 @@ FROM python:latest
 LABEL Maintainer="dexythepuppy"
 
 
-ENTRYPOINT [“python3”, perfmon.py”]
+ENTRYPOINT [“python”, perfmon.py”]
 
 # Any working directory can be chosen as per choice like '/' or '/home' etc
 # i have chosen /usr/app/src
