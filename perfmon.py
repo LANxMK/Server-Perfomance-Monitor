@@ -6,12 +6,10 @@
 
 # requires psutil library: https://pypi.org/project/psutil/
 # install using 'pip install psutil'
-from pip._internal import main as pipmain
+import os
+os.system('pip install psutil')
 
-
-pipmain(['install', 'psutil'])
-
-from pip._internal import psutil
+import psutil
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import parse_qs
 from time import time
